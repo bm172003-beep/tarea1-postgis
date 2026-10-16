@@ -1,0 +1,24 @@
+tabla,indice,usos,tamano
+edificios,idx_edificios_geom,0,4856 kB
+calles,idx_calles_geom,0,4192 kB
+amenidades,idx_amenidades_geom,0,872 kB
+grilla_hex,idx_grilla_hex_geom,0,40 kB
+estaciones_gtfs,idx_estaciones_gtfs_geom,0,32 kB
+recorridos,recorridos_pkey,0,32 kB
+comunas_caja,comunas_caja_pkey,0,16 kB
+comunas_caja,idx_comunas_caja_gcaja,0,8192 bytes
+caja_zona,idx_caja_zona_geom,0,8192 bytes
+comunas_caja,idx_comunas_caja_geom,0,8192 bytes
+comunas_caja_sub,idx_comunas_caja_sub_geom,0,8192 bytes
+amenidades,idx_amenidades_amenity,1,168 kB
+comunas_zona,idx_comunas_zona_geom,1,8192 bytes
+recorridos,idx_recorridos_ruta,2,32 kB
+paraderos_gtfs,paraderos_gtfs_pkey,6,160 kB
+comunas_sub,idx_comunas_sub_geom,11,8192 bytes
+amenidades,idx_amenidades_salud_geom,478,64 kB
+edificios,idx_edificios_punto,866,4784 kB
+recorridos,idx_recorridos_geom,986,40 kB
+recorridos_bus_buf15,idx_rec_bus_buf15_geom,14613,72 kB
+paraderos_osm,idx_paraderos_osm_geom,238237,264 kB
+paraderos_gtfs,idx_paraderos_gtfs_geom,240306,272 kB
+

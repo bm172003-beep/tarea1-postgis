@@ -1,0 +1,59 @@
+                                                                               QUERY PLAN                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=2350215.75..2350215.76 rows=1 width=8) (actual time=949.808..949.914 rows=1 loops=1)
+   Buffers: shared hit=72141
+   ->  Nested Loop  (cost=19482.29..2350211.66 rows=1639 width=0) (actual time=275.698..949.796 rows=239 loops=1)
+         Buffers: shared hit=72141
+         ->  Hash Semi Join  (cost=18059.53..18271.14 rows=1639 width=32) (actual time=272.075..273.817 rows=239 loops=1)
+               Hash Cond: (p.stop_id = st.stop_id)
+               Buffers: shared hit=10954
+               ->  Seq Scan on paraderos_gtfs p  (cost=0.00..157.69 rows=6569 width=38) (actual time=0.013..0.424 rows=6569 loops=1)
+                     Buffers: shared hit=92
+               ->  Hash  (cost=18027.45..18027.45 rows=2567 width=6) (actual time=272.011..272.114 rows=5424 loops=1)
+                     Buckets: 8192 (originally 4096)  Batches: 1 (originally 1)  Memory Usage: 266kB
+                     Buffers: shared hit=10862
+                     ->  Gather  (cost=1666.42..18027.45 rows=2567 width=6) (actual time=238.761..271.232 rows=5424 loops=1)
+                           Workers Planned: 2
+                           Workers Launched: 2
+                           Buffers: shared hit=10862
+                           ->  Hash Join  (cost=666.42..16770.75 rows=1070 width=6) (actual time=196.532..229.241 rows=1808 loops=3)
+                                 Hash Cond: (st.trip_id = t.trip_id)
+                                 Buffers: shared hit=10862
+                                 ->  Parallel Seq Scan on raw_stop_times st  (cost=0.00..14377.20 rows=457720 width=20) (actual time=0.025..22.235 rows=366176 loops=3)
+                                       Buffers: shared hit=9800
+                                 ->  Hash  (cost=665.66..665.66 rows=61 width=16) (actual time=178.121..178.123 rows=46 loops=3)
+                                       Buckets: 1024  Batches: 1  Memory Usage: 10kB
+                                       Buffers: shared hit=900
+                                       ->  Hash Join  (cost=11.36..665.66 rows=61 width=16) (actual time=175.059..178.113 rows=46 loops=3)
+                                             Hash Cond: (t.route_id = r.route_id)
+                                             Buffers: shared hit=900
+                                             ->  Seq Scan on raw_trips t  (cost=0.00..555.59 rows=26159 width=19) (actual time=0.012..1.649 rows=26159 loops=3)
+                                                   Buffers: shared hit=882
+                                             ->  Hash  (cost=11.35..11.35 rows=1 width=4) (actual time=174.233..174.234 rows=1 loops=3)
+                                                   Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                                                   Buffers: shared hit=18
+                                                   ->  Seq Scan on raw_routes r  (cost=0.00..11.35 rows=1 width=4) (actual time=174.204..174.226 rows=1 loops=3)
+                                                         Filter: (route_short_name = '514'::text)
+                                                         Rows Removed by Filter: 427
+                                                         Buffers: shared hit=18
+         ->  Limit  (cost=1422.76..1422.76 rows=1 width=12) (actual time=2.825..2.825 rows=1 loops=239)
+               Buffers: shared hit=61187
+               ->  Sort  (cost=1422.76..1426.15 rows=1355 width=12) (actual time=2.823..2.823 rows=1 loops=239)
+                     Sort Key: ((am.geom <-> p.geom))
+                     Sort Method: top-N heapsort  Memory: 25kB
+                     Buffers: shared hit=61187
+                     ->  Seq Scan on amenidades am  (cost=0.00..1415.99 rows=1355 width=12) (actual time=0.002..2.683 rows=1355 loops=239)
+                           Filter: (amenity = ANY ('{pharmacy,hospital,clinic,doctors}'::text[]))
+                           Rows Removed by Filter: 19519
+                           Buffers: shared hit=61184
+ Planning:
+   Buffers: shared hit=448
+ Planning Time: 1.183 ms
+ JIT:
+   Functions: 76
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 2.162 ms, Inlining 163.873 ms, Optimization 215.911 ms, Emission 143.111 ms, Total 525.057 ms
+ Execution Time: 970.754 ms
+(54 rows)
+
+

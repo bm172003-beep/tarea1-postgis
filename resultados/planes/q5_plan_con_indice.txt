@@ -1,0 +1,50 @@
+                                                                               QUERY PLAN                                                                               
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=20876.06..20876.07 rows=1 width=8) (actual time=77.562..77.638 rows=1 loops=1)
+   Buffers: shared hit=12206
+   ->  Nested Loop  (cost=18059.68..20871.96 rows=1639 width=0) (actual time=66.000..77.615 rows=239 loops=1)
+         Buffers: shared hit=12206
+         ->  Hash Semi Join  (cost=18059.53..18271.14 rows=1639 width=32) (actual time=65.818..67.021 rows=239 loops=1)
+               Hash Cond: (p.stop_id = st.stop_id)
+               Buffers: shared hit=10990
+               ->  Seq Scan on paraderos_gtfs p  (cost=0.00..157.69 rows=6569 width=38) (actual time=0.004..0.377 rows=6569 loops=1)
+                     Buffers: shared hit=92
+               ->  Hash  (cost=18027.45..18027.45 rows=2567 width=6) (actual time=65.787..65.862 rows=5424 loops=1)
+                     Buckets: 8192 (originally 4096)  Batches: 1 (originally 1)  Memory Usage: 266kB
+                     Buffers: shared hit=10898
+                     ->  Gather  (cost=1666.42..18027.45 rows=2567 width=6) (actual time=30.071..65.222 rows=5424 loops=1)
+                           Workers Planned: 2
+                           Workers Launched: 2
+                           Buffers: shared hit=10898
+                           ->  Hash Join  (cost=666.42..16770.75 rows=1070 width=6) (actual time=23.231..58.303 rows=1808 loops=3)
+                                 Hash Cond: (st.trip_id = t.trip_id)
+                                 Buffers: shared hit=10898
+                                 ->  Parallel Seq Scan on raw_stop_times st  (cost=0.00..14377.20 rows=457720 width=20) (actual time=0.008..20.673 rows=366176 loops=3)
+                                       Buffers: shared hit=9800
+                                 ->  Hash  (cost=665.66..665.66 rows=61 width=16) (actual time=3.973..3.975 rows=46 loops=3)
+                                       Buckets: 1024  Batches: 1  Memory Usage: 10kB
+                                       Buffers: shared hit=900
+                                       ->  Hash Join  (cost=11.36..665.66 rows=61 width=16) (actual time=0.970..3.963 rows=46 loops=3)
+                                             Hash Cond: (t.route_id = r.route_id)
+                                             Buffers: shared hit=900
+                                             ->  Seq Scan on raw_trips t  (cost=0.00..555.59 rows=26159 width=19) (actual time=0.008..1.498 rows=26159 loops=3)
+                                                   Buffers: shared hit=882
+                                             ->  Hash  (cost=11.35..11.35 rows=1 width=4) (actual time=0.049..0.050 rows=1 loops=3)
+                                                   Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                                                   Buffers: shared hit=18
+                                                   ->  Seq Scan on raw_routes r  (cost=0.00..11.35 rows=1 width=4) (actual time=0.020..0.045 rows=1 loops=3)
+                                                         Filter: (route_short_name = '514'::text)
+                                                         Rows Removed by Filter: 427
+                                                         Buffers: shared hit=18
+         ->  Limit  (cost=0.14..1.57 rows=1 width=12) (actual time=0.044..0.044 rows=1 loops=239)
+               Buffers: shared hit=1216
+               ->  Index Scan using idx_amenidades_salud_geom on amenidades am  (cost=0.14..1926.73 rows=1355 width=12) (actual time=0.043..0.043 rows=1 loops=239)
+                     Order By: (geom <-> p.geom)
+                     Buffers: shared hit=1216
+ Planning:
+   Buffers: shared hit=448
+ Planning Time: 1.198 ms
+ Execution Time: 85.997 ms
+(45 rows)
+
+

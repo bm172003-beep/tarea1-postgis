@@ -1,0 +1,25 @@
+                                                                      QUERY PLAN                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ HashAggregate  (cost=3466.20..3469.70 rows=200 width=150) (actual time=542.816..542.840 rows=30 loops=1)
+   Group Key: tramos.comuna
+   Batches: 1  Memory Usage: 40kB
+   Buffers: shared hit=34892
+   CTE tramos
+     ->  Nested Loop  (cost=0.14..3460.40 rows=232 width=18) (actual time=0.768..538.294 rows=3298 loops=1)
+           Buffers: shared hit=34892
+           ->  Seq Scan on comunas_zona c  (cost=0.00..15.30 rows=30 width=6778) (actual time=0.004..0.045 rows=30 loops=1)
+                 Buffers: shared hit=15
+           ->  Index Scan using idx_recorridos_geom on recorridos r  (cost=0.14..17.19 rows=1 width=8086) (actual time=0.171..3.309 rows=110 loops=30)
+                 Index Cond: (geom && c.geom)
+                 Filter: st_intersects(geom, c.geom)
+                 Rows Removed by Filter: 125
+                 Buffers: shared hit=23451
+   ->  CTE Scan on tramos  (cost=0.00..4.64 rows=232 width=126) (actual time=0.770..540.195 rows=3298 loops=1)
+         Buffers: shared hit=34892
+ Planning:
+   Buffers: shared hit=218
+ Planning Time: 9.103 ms
+ Execution Time: 542.990 ms
+(20 rows)
+
+

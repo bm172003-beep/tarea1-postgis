@@ -1,0 +1,43 @@
+# Tarea 1 — PostGIS de punta a punta (Santiago centro).
+# Parte del compose del Lab 05, con tres cambios:
+#   1. Nada se monta desde fuera del repo (el Lab montaba ../01 y ../03): en la máquina del
+#      corrector esas carpetas no existen. Todo lo que entra va en ./datos_fuente (ver README).
+#   2. Nombres propios (contenedor, volumen, puerto 5434) para no pisar los del Lab 05.
+#   3. shm_size y memoria de mantenimiento más grandes: la carga de Santiago es más pesada.
+#
+#     docker compose up -d --wait --build
+#     python3 cargar.py
+#     docker compose exec db psql -U postgres
+#     docker compose down        # apaga (los datos quedan en el volumen)
+#     docker compose down -v     # apaga y borra el volumen
+
+services:
+  db:
+    build: .                          # Dockerfile de esta carpeta: PostGIS + hstore + gdal-bin
+    image: pmd-postgis-gdal           # mismo nombre que usa preparar_datos.py
+    container_name: pmd-tarea1
+    environment:
+      POSTGRES_PASSWORD: pmd2026
+    ports:
+      - "5434:5432"                   # host:contenedor
+    shm_size: 1gb                     # evita "could not resize shared memory segment" en consultas paralelas
+    command: >
+      postgres
+      -c shared_buffers=512MB
+      -c work_mem=64MB
+      -c maintenance_work_mem=512MB
+    volumes:
+      - pmd-t1-pgdata:/var/lib/postgresql/data   # volumen con nombre: la base sobrevive a `down`
+      - ./datos:/datos                           # GeoPackage generado y GTFS descomprimido
+      - ./datos_fuente:/datos_fuente:ro          # .osm.pbf, ZIP del GTFS y comunas_cl.sql (NO versionados)
+      - ./sql:/sql:ro                            # scripts SQL del ETL y de las consultas
+      - ./resultados:/resultados                 # salidas: CSV, planes, GeoPackages de mapas
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  pmd-t1-pgdata:
+    name: pmd-t1-pgdata

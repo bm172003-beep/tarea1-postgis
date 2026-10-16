@@ -1,0 +1,241 @@
+stop_id,stop_name,nombre,amenity,dist_m
+PD663,PD663-Ramón Cruz / esq. I. Carrera Pinto,SAPU Santa Julia,doctors,940
+PD699,PD699-Ramón Cruz / esq. I. Carrera Pinto,Cruz Verde,pharmacy,886
+PD615,PD615-Av. Departamental / esq. Los Cerezos,Posta de salud rural las perdices,doctors,845
+PD700,PD700-Ramón Cruz / esq. Enrique Molina G.,Farmacia El Valle,pharmacy,837
+PD662,PD662-Ramón Cruz / esq. Enrique Molina G.,CESFAM Padre Gerardo Whelan,clinic,826
+PE274,PE274-Av. Departamental / esq. Los Cerezos,Centro de Medicina Biológica Los Alerces,doctors,811
+PD664,PD664-Ramón Cruz / esq. Los Limoneros,Cruz Verde,pharmacy,799
+PD137,PD137-Avenida Tobalaba / esq. Av. Ramón Carnicer,Farmacias La Botika,pharmacy,792
+PD1409,PD1409-Avenida Tobalaba / esq. Jorge Prieto L.,Farmacias La Botika,pharmacy,787
+PD568,PD568-Ramón Cruz / esq. Av. Rodrigo de Araya,CESFAM Padre Gerardo Whelan,clinic,773
+PD698,PD698-Ramón Cruz / esq. 4 Norte,Cruz Verde,pharmacy,735
+PA640,PA640-Parada / Estadio Marista,Centro de Salud Amengual de la Usach,clinic,729
+PD616,PD616-Av. Departamental / esq. Los Nogales,Centro de Medicina Biológica Los Alerces,doctors,725
+PD702,PD702-Ramón Cruz / esq. Av. Rodrigo de Araya,CESFAM Padre Gerardo Whelan,clinic,709
+PI85,PI85-Parada / Estadio Marista,CECOSF Plaza México,doctors,702
+PD701,PD701-Ramón Cruz / esq. Amanda Labarca H,CESFAM Padre Gerardo Whelan,clinic,701
+PD136,PD136-Av. San Luis de Macul / esq. Avenida Tobalaba,Farmacias La Botika,pharmacy,700
+PD617,PD617-Av. Departamental / esq. Mariano Sánchez F.,Centro de Medicina Biológica Los Alerces,doctors,698
+PD661,PD661-Ramón Cruz / esq. Amanda Labarca H,CESFAM Padre Gerardo Whelan,clinic,695
+PE273,PE273-Av. Departamental / esq. Los Nogales,Centro de Medicina Biológica Los Alerces,doctors,687
+PJ885,PJ885-Neptuno / esq. Av. Gral. O. Bonilla,CESFAM Doctor Raúl Yazigi,clinic,681
+PD703,PD703-Ramón Cruz / esq. Playa 2,Centro Asistencial de Ñuñoa,doctors,679
+PD697,PD697-Ramón Cruz / esq. 3 Norte,Cruz Verde,pharmacy,678
+PD665,PD665-Ramón Cruz / esq. Los Plátanos,Cruz Verde,pharmacy,677
+PD667,PD667-Ramón Cruz / esq. Avenida Quilín,Farmacias Ahumada,pharmacy,671
+PE1321,PE1321-Av. Departamental / esq. Los Nogales,Centro de Medicina Biológica Los Alerces,doctors,671
+PD666,PD666-Ramón Cruz / esq. Madreselvas,Cruz Verde,pharmacy,669
+PD693,PD693-San Vicente de Paul / esq. San Lucas,Farmacias Ahumada,pharmacy,668
+PD696,PD696-Ramón Cruz / esq. Las Madreselvas,Cruz Verde,pharmacy,651
+PD567,PD567-Ramón Cruz / esq. Peatones 16,Centro Integral de la Persona Mayor,doctors,638
+PD695,PD695-Avenida Quilín / esq. Ramón Cruz Montt,Farmacias Ahumada,pharmacy,638
+PD139,PD139-Av. San Luis de Macul / esq. Nueva 1,Farmacias La Botika,pharmacy,637
+PD669,PD669-San Vicente de Paul / esq. San Lucas,Farmacias Ahumada,pharmacy,635
+PJ34,PJ34-Nueva Imperial / esq. Radal,Farmacia,pharmacy,616
+PJ907,PJ907-Neptuno / esq. Huelen Huala,CESFAM Doctor Raúl Yazigi,clinic,603
+PD704,PD704-Parada 6 / Centro Olímpico Marlene Ahrens,Centro Integral de la Persona Mayor,doctors,588
+PJ1607,PJ1607-Nueva Imperial / esq. Radal,CECOSF Plaza México,doctors,584
+PJ191,PJ191-Parada 2 / (M) Neptuno,CESFAM Doctor Raúl Yazigi,clinic,583
+PJ884,PJ884-Parada 6 / (M) Neptuno,CESFAM Doctor Raúl Yazigi,clinic,568
+PD676,PD676-Av. San Luis de Macul / esq. Calle 334,Farmacias Ahumada,pharmacy,566
+PD687,PD687-Av. San Luis de Macul / esq. Av. A. Vespucio,Farmacias Ahumada,pharmacy,565
+PD668,PD668-Avenida Quilín / esq. Los Evangelistas,Farmacias Ahumada,pharmacy,562
+PD670,PD670-San Vicente de Paul / esq. Peatones Sn. Vicente,Centro de Salud San Ramón,clinic,557
+PD677,PD677-Av. San Luis de Macul / esq. Hojas Secas,Farmacias 24,pharmacy,550
+PJ876,PJ876-Porto Seguro / esq. Gaspar de Orense,CECOSF Plaza México,doctors,550
+PD660,PD660-Parada 5 / Centro Olímpico Marlene Ahrens,Centro Integral de la Persona Mayor,doctors,543
+PD692,PD692-San Vicente de Paul / esq. Sebastián Apóstol,Centro de Salud San Ramón,clinic,543
+PD686,PD686-Av. San Luis de Macul / esq. Gral.Horacio Toro,Farmacias 24,pharmacy,528
+PI86,PI86-Parada / Museo Artequín,Hospital San Juan de Dios,hospital,519
+PJ1609,PJ1609-Nueva Imperial / esq. Santa Petronila,Farmacia,pharmacy,511
+PI751,PI751-Av. Gral. Oscar Bonilla / esq. Búfalo,Centro familiar Pablo Neruda,clinic,509
+PI752,PI752-Av. Gral. Oscar Bonilla / esq. Gral. J. Buendía,SAPU Pablo Neruda,doctors,506
+PD273,PD273-Av. Américo Vespucio / esq. Av. Sn. Luis de Macul,Farmacias Ahumada,pharmacy,493
+PJ57,PJ57-Parada 2 / Basílica de Lourdes,Farmacia Espoz,pharmacy,491
+PD705,PD705-Ramón Cruz / esq. María Celeste,Farmacias Farmalym,pharmacy,489
+PI761,PI761-Av. Gral. Oscar Bonilla / esq. Escul Fraser,SAPU Pablo Neruda,doctors,487
+PI762,PI762-Av. Gral. Oscar Bonilla / esq. Búfalo,Centro familiar Pablo Neruda,clinic,481
+PD270,PD270-Av. Américo Vespucio / esq. Armando Pesantes,Centro de Diagnóstico CEDINTA,clinic,478
+PD432,PD432-Dublé Almeyda / esq. Ramón Cruz Montt,Farmacias Farmalym,pharmacy,474
+PJ44,PJ44-Av. Apóstol Santiago / esq. Porto Seguro,CECOSF Plaza México,doctors,474
+PD685,PD685-Av. San Luis de Macul / esq. Central,Farmacia San Luis de Macul,pharmacy,473
+PJ1611,PJ1611-Nueva Imperial / esq. Avenida Las Rejas,Farmacia,pharmacy,471
+PD343,PD343-Ramón Cruz / esq. Dublé Almeyda,Cruz Verde,pharmacy,468
+PJ914,PJ914-Nueva Imperial / esq. Gaspar de Orense,CECOSF Plaza México,doctors,459
+PD708,PD708-Ramón Cruz / esq. Dublé Almeyda,Farmacias Farmalym,pharmacy,458
+PJ877,PJ877-Porto Seguro / esq. Radal,CESFAM Las Mercedes,clinic,458
+PJ874,PJ874-Porto Seguro / esq. San Gumercindo,CECOSF Plaza México,doctors,455
+PD675,PD675-Parada 10 / (M) Macul,Farmacias Ahumada,pharmacy,454
+PA642,PA642-Parada / Museo Artequín,Hospital San Juan de Dios,hospital,452
+PD140,PD140-Av. San Luis de Macul / esq. Las Cepas,Farmacias La Botika,pharmacy,447
+PD274,PD274-Av. Américo Vespucio / esq. Chillán,Farmacias 24,pharmacy,438
+PJ216,PJ216-Av. Gral. Oscar Bonilla / esq. Rupia Hindú,Medical Store,pharmacy,435
+PJ56,PJ56-Parada / INBA,Farmacia Salamovich,pharmacy,435
+PD678,PD678-Av. San Luis de Macul / esq. Embalse La Palma,Farmacia San Luis de Macul,pharmacy,432
+PD659,PD659-Ramón Cruz / esq. Raúl Silva Castro,Farmacias Farmalym,pharmacy,431
+PI763,PI763-Av. Gral. Oscar Bonilla / esq. Chicago,Medical Store,pharmacy,431
+PA641,PA641-Avenida Portales / esq. Apóstol Santiago,CECOSF Plaza México,doctors,427
+PD671,PD671-San Vicente de Paul / esq. Eduardo Fabini,Centro de Salud San Ramón,clinic,423
+PJ1610,PJ1610-Nueva Imperial / esq. Gaspar de Orense,CECOSF Plaza México,doctors,422
+PJ213,PJ213-Av. Gral. Oscar Bonilla / esq. Rupia Hindú,CECOSF Santa Corina,doctors,422
+PJ875,PJ875-Porto Seguro / esq. Blanco Garcés,CECOSF Plaza México,doctors,419
+PD689,PD689-San Vicente de Paul / esq. Calle 2,Centro de Salud San Ramón,clinic,417
+PD694,PD694-San Vicente de Paul / esq. Avenida Quilín,Farmacias Ahumada,pharmacy,414
+PD1440,PD1440-Avenida Quilín / esq. Sn. Vicente de Paul,Farmacias Ahumada,pharmacy,413
+PD691,PD691-San Vicente de Paul / esq. 1 Oriente,Centro de Salud San Ramón,clinic,413
+PJ19,PJ19-Avenida Las Rejas / esq. Nueva Imperial,Farmacia Los Ediles,pharmacy,408
+PD673,PD673-San Vicente de Paul / esq. Cuadro Verde,Centro de Salud San Ramón,clinic,394
+PI750,PI750-Av. Gral. Oscar Bonilla / esq. Chicago,Medical Store,pharmacy,392
+PC561,PC561-Parada 6 / Museo de Los Tajamares,Cruz Verde,pharmacy,389
+PA7,PA7-Parada 1 / (M) Quinta Normal,Hospital San Juan de Dios,hospital,385
+PD143,PD143-Av. San Luis de Macul / esq. Nueva,Farmacias La Botika,pharmacy,375
+PA428,PA428-Compañía de Jesús / esq. Esperanza,Hospital San Juan de Dios,hospital,374
+PD706,PD706-Ramón Cruz / esq. José María Narbona,Farmacias Farmalym,pharmacy,371
+PD344,PD344-Ramón Cruz / esq. Av. Castillo Velasco,Farmacias Farmalym,pharmacy,370
+PC199,PC199-Parada 3 / Museo de Los Tajamares,Cruz Verde,pharmacy,367
+PD690,PD690-San Vicente de Paul / esq. Campo Lindo,Centro de Salud San Ramón,clinic,365
+PD133,PD133-Av. San Luis de Macul / esq. Los Soldadores,Farmacias La Botika,pharmacy,363
+PD707,PD707-Ramón Cruz / esq. Av. Castillo Velasco,Farmacias Farmalym,pharmacy,359
+PJ43,PJ43-Av. Apóstol Santiago / esq. Nueva Imperial,CECOSF Plaza México,doctors,359
+PD672,PD672-San Vicente de Paul / esq. Campo Lindo,Centro de Salud San Ramón,clinic,356
+PJ42,PJ42-Av. Apóstol Santiago / esq. Compañía de Jesús,Farmacia Espoz,pharmacy,354
+PD135,PD135-Av. San Luis de Macul / esq. Gabriela Mistral,Farmacias La Botika,pharmacy,350
+PC196,PC196-Parada 2 / Museo de Los Tajamares,Cruz Verde,pharmacy,347
+PD658,PD658-Ramón Cruz / esq. José María Narbona,Farmacias Farmalym,pharmacy,342
+PD144,PD144-Av. San Luis de Macul / esq. Los Cerezos,SAPU San Luis,doctors,332
+PJ1582,PJ1582-Av. Las Rejas-Norte / esq. Ciudadela,Farmacia Los Ediles,pharmacy,321
+PD356,PD356-Dublé Almeyda / esq. Alc. J. Monckeberg,Farmacias Ahumada,pharmacy,318
+PA822,PA822-Avenida Brasil / esq. Catedral,Centro de Referencia Sociosanitario,doctors,312
+PD607,PD607-Dr. Amador Neghme R. / esq. Juan Jofré,Centro de Diagnóstico CEDINTA,clinic,311
+PD674,PD674-San Vicente de Paul / esq. Avenida Las Torres,Centro de Diagnóstico CEDINTA,clinic,305
+PJ883,PJ883-Avenida Dorsal / esq. Claudio Zúñiga,CESFAM Doctor Raúl Yazigi,clinic,305
+PI764,PI764-Parada 6 / (M) Barrancas,Medical Store,pharmacy,302
+PJ1075,PJ1075-Nueva Imperial / esq. Díaz Sagredo,CECOSF Plaza México,doctors,301
+PA297,PA297-Parada / Plaza Brasil,Farmacias Ahumada,pharmacy,300
+PA463,PA463-Catedral / esq. Esperanza,Cesfam Ignacio Domeyko,clinic,298
+PD1391,PD1391-Ramón Cruz / esq. Valparaíso,Cruz Verde,pharmacy,297
+PD500,PD500-José Manuel Infante / esq. Avenida Sucre,Cruz Verde,pharmacy,292
+PD681,PD681-Av. San Luis de Macul / esq. Los Cerezos,Cesfam San Luis,doctors,292
+PJ908,PJ908-Avenida Dorsal / esq. Min Gana,CESFAM Doctor Raúl Yazigi,clinic,292
+PD629,PD629-Dr. Amador Neghme R. / esq. Sn. Vicente De Paul,Centro de Diagnóstico CEDINTA,clinic,291
+PC195,PC195-Parada 2 / Parque Balmaceda,SalcoBrand,pharmacy,289
+PJ1682,PJ1682-Parada 7 / (M) Barrancas,Medical Store,pharmacy,288
+PI1678,PI1678-Avenida Dorsal / esq. Av. Las Rejas-Norte,Farmacia Los Ediles,pharmacy,279
+PD523,PD523-Seminario / esq. Malaquías Concha,Farmacia Montes,pharmacy,272
+PD324,PD324-Parada 2 / Irarrázaval - Salvador,Farmarecet,pharmacy,252
+PJ541,PJ541-Nueva Imperial / esq. Francisco Javier,CECOSF Plaza México,doctors,248
+PC572,PC572-José Manuel Infante / esq. Clemente Fabres,CESFAM Doctor Hernán Alessandri,clinic,245
+PJ913,PJ913-Avenida Dorsal / esq. Av. Las Rejas-Norte,Farmacia Los Ediles,pharmacy,243
+PC568,PC568-Avenida Salvador / esq. Caupolicán,Cruz Verde,pharmacy,241
+PD519,PD519-Avenida Salvador / esq. Colo Colo,Farmacia Pucón,pharmacy,241
+PJ1608,PJ1608-Nueva Imperial / esq. Victorino Laynez,CECOSF Plaza México,doctors,241
+PD1370,PD1370-Parada 1 / Plaza Ñuñoa,Cruz Verde,pharmacy,236
+PD1642,PD1642-Parada 6 / (M) Macul,Farmacias Ahumada,pharmacy,236
+PJ1038,PJ1038-Avenida Dorsal / esq. Isla Decepción,CESFAM Doctor Raúl Yazigi,clinic,236
+PC200,PC200-Parada 3 / Parque Balmaceda,SalcoBrand,pharmacy,230
+PD355,PD355-Dublé Almeyda / esq. Juan Moya Morales,SalcoBrand,pharmacy,230
+PA41,PA41-Parada 6 / (M) Universidad Católica,Farmacias del Dr. Simi,pharmacy,227
+PA429,PA429-Compañía de Jesús / esq. Cueto,Cesfam Ignacio Domeyko,clinic,226
+PD341,PD341-Avenida Irarrázaval / esq. Alc. J. Monckeberg,Farmacias Ahumada,pharmacy,223
+PJ211,PJ211-Av. Gral. Oscar Bonilla / esq. Rublo Ruso,CECOSF Santa Corina,doctors,214
+PC574,PC574-José Manuel Infante / esq. Caupolicán,Cruz Verde,pharmacy,209
+PC581,PC581-Seminario / esq. Marín,Clínica Merced,clinic,208
+PA40,PA40-Parada 1 / Parque Forestal,Manríquez,pharmacy,207
+PD521,PD521-Avenida Salvador / esq. Caupolicán,Cruz Verde,pharmacy,207
+PJ1819,PJ1819-Avenida Dorsal / esq. Las Acacias,Farmacia Los Ediles,pharmacy,207
+PD679,PD679-Av. San Luis de Macul / esq. 4 Oriente,Farmacia San Luis de Macul,pharmacy,206
+PD353,PD353-Dublé Almeyda / esq. Brown Sur,Ultra Solidaria,pharmacy,197
+PJ217,PJ217-Av. Gral. Oscar Bonilla / esq. Los Ediles,CECOSF Santa Corina,doctors,195
+PJ880,PJ880-Avenida Dorsal / esq. Santa Marta,CESFAM Doctor Raúl Yazigi,clinic,188
+PJ212,PJ212-Av. Gral. Oscar Bonilla / esq. Los Ediles,CECOSF Santa Corina,doctors,186
+PJ218,PJ218-Av. Gral. Oscar Bonilla / esq. Rublo Ruso,CECOSF Santa Corina,doctors,182
+PJ911,PJ911-Avenida Dorsal / esq. España,Farmacia Los Ediles,pharmacy,182
+PD314,PD314-Avenida Irarrázaval / esq. Ortúzar,Farmacias Ahumada,pharmacy,177
+PA424,PA424-Santo Domingo / esq. Almirante Barroso,Centro de Referencia Sociosanitario,doctors,173
+PA427,PA427-Parada 1 / Hospital San Juan de Dios,Hospital San Juan de Dios,hospital,173
+PD354,PD354-Dublé Almeyda / esq. Los Jardines,Cruz Verde,pharmacy,169
+PI87,PI87-Parada / Biblioteca de Santiago,Hospital San Juan de Dios,hospital,168
+PD351,PD351-Dublé Almeyda / esq. Exequiel Fernández,,pharmacy,166
+PD173,PD173-Parada 2 / (M) Las Torres,Farmacias 24,pharmacy,165
+PD339,PD339-Avenida Irarrázaval / esq. Santa Julia,Cruz Verde,pharmacy,165
+PD111,PD111-Parada 5 / (M) Mons. Eyzaguirre,Farmacias del Dr. Simi,pharmacy,162
+PD784,PD784-Parada 1 / Irarrázaval - Salvador,Farmarecet,pharmacy,162
+PA6,PA6-Parada 2 / Hospital San Juan de Dios,Hospital San Juan de Dios,hospital,160
+PD142,PD142-Av. San Luis de Macul / esq. Los Boteros,Farmacias La Botika,pharmacy,157
+PD429,PD429-Dublé Almeyda / esq. H. Covarrubias,,pharmacy,156
+PJ915,PJ915-Nueva Imperial / esq. Constantino,CECOSF Plaza México,doctors,152
+PD338,PD338-Parada 3 / Plaza Ñuñoa,Cruz Verde,pharmacy,148
+PD352,PD352-Parada 7 / (M) Chile España,Farmacia Santa Gemita,pharmacy,148
+PJ879,PJ879-Avenida Dorsal / esq. España,Farmacia Los Ediles,pharmacy,147
+PD141,PD141-Av. San Luis de Macul / esq. Los Arrieros,Farmacias La Botika,pharmacy,141
+PC575,PC575-Avenida Salvador / esq. Santa Isabel,Clínica San Andrés,clinic,138
+PD326,PD326-Parada 14 / (M) Irarrázaval,Farma Oferta,pharmacy,137
+PC560,PC560-Seminario / esq. María L. Santander,Farmacias Ahumada,pharmacy,132
+PJ1074,PJ1074-Nueva Imperial / esq. Barros Arana,CECOSF Plaza México,doctors,131
+PJ882,PJ882-Avenida Dorsal / esq. Pardo Villalón,CESFAM Doctor Raúl Yazigi,clinic,130
+PJ58,PJ58-Parada 4 / (M) Gruta de Lourdes,Farmacia Espoz,pharmacy,128
+PD684,PD684-Av. San Luis de Macul / esq. Nevado Incahuasi,Farmacia San Luis de Macul,pharmacy,123
+PD316,PD316-Avenida Irarrázaval / esq. Pedro Torres,Cruz Verde,pharmacy,122
+PC567,PC567-Avenida Salvador / esq. Santa Isabel,Clínica San Andrés,clinic,121
+PJ909,PJ909-Avenida Dorsal / esq. Hiram,CESFAM Doctor Raúl Yazigi,clinic,114
+PA298,PA298-Parada 7 / (M) Santa Ana,Centro de Referencia Sociosanitario,doctors,110
+PD522,PD522-Seminario / esq. Tucapel,Farma Oferta,pharmacy,109
+PD342,PD342-Parada 1 / (M) Villa Frei,Los Orientales,pharmacy,103
+PD313,PD313-Parada 2 / (M) Villa Frei,Los Orientales,pharmacy,102
+PD317,PD317-Parada 2 / Plaza Ñuñoa,Cruz Verde,pharmacy,98
+PA599,PA599-Parada 4 / Hospital San Juan de Dios,Hospital San Juan de Dios,hospital,82
+PC201,PC201-Parada 3 / (M) Salvador,Cruz Verde,pharmacy,82
+PA689,PA689-Catedral / esq. Cueto,Cesfam Ignacio Domeyko,clinic,80
+PC571,PC571-José Manuel Infante / esq. Av. Francisco Bilbao,SalcoBrand,pharmacy,71
+PD112,PD112-Dublé Almeyda / esq. Campos de Deportes,SalcoBrand,pharmacy,69
+PA421,PA421-Parada 2 / San Antonio - Santo Domingo,Farmacia Comunitaria Doctora Eloísa Díaz,pharmacy,66
+PD336,PD336-Avenida Irarrázaval / esq. Exequiel Fernández,SalcoBrand,pharmacy,65
+PD321,PD321-Parada 2 / Irarrázaval - Campos del Deporte,Consalud,clinic,63
+PD333,PD333-Parada 1 / (M) Mons. Eyzaguirre,Podología,clinic,63
+PD332,PD332-Avenida Irarrázaval / esq. Capitán Fuentes,Farmarecet,pharmacy,62
+PD322,PD322-Parada 2 / (M) Mons. Eyzaguirre,Podología,clinic,56
+PA5,PA5-Parada 3 / Hospital San Juan de Dios,Hospital San Juan de Dios,hospital,51
+PA43,PA43-Miraflores / esq. Agustinas,Farmacia Manríquez,pharmacy,50
+PD325,PD325-Avenida Irarrázaval / esq. Avenida Condell,Farmacia integral,pharmacy,50
+PA417,PA417-Parada 3 / (M) Plaza de Armas,SalcoBrand,pharmacy,49
+PC559,PC559-Seminario / esq. Rancagua,Cruz Verde,pharmacy,49
+PD335,PD335-Parada 1 / (M) Ñuñoa,Centro Médico Dávila Ñuñoa,clinic,48
+PA332,PA332-Parada 2 / Liceo Uno,Cruz Verde,pharmacy,47
+PC573,PC573-José Manuel Infante / esq. Santa Isabel,Cruz Verde,pharmacy,47
+PD520,PD520-Avenida Salvador / esq. Avenida Sucre,Farmacias Ahumada,pharmacy,46
+PA373,PA373-Parada 9 / Plaza Italia,Farmacias del Dr. Simi,pharmacy,45
+PD315,PD315-Parada / Casa de La Cultura Ñuñoa,SalcoBrand,pharmacy,44
+PC570,PC570-José Manuel Infante / esq. Los Naranjos,Instituto de Neurocirugía Doctor Alfonso Asenjo,hospital,43
+PD680,PD680-Av. San Luis de Macul / esq. Pasaje Peatones 3,Farmacia San Luis de Macul,pharmacy,41
+PC565,PC565-Avenida Salvador / esq. Rancagua,Farmacias Carmen,pharmacy,37
+PD320,PD320-Avenida Irarrázaval / esq. Marchant Pereira,SalcoBrand,pharmacy,34
+PC578,PC578-Parada / Hospital Del Salvador,Uromed,doctors,33
+PC563,PC563-Parada 5 / (M) Salvador,SalcoBrand,pharmacy,32
+PD334,PD334-Parada 1 / Irarrázaval - Campos del Deporte,Farnatención,pharmacy,31
+PA334,PA334-Merced / esq. Miraflores,Farmacias del Dr. Simi,pharmacy,28
+PA44,PA44-Miraflores / esq. Merced,Farmacias del Dr. Simi,pharmacy,28
+PD683,PD683-Av. San Luis de Macul / esq. Nevado 3 Cruces,Farmacia San Luis de Macul,pharmacy,28
+PA422,PA422-Parada 4 / (M) Plaza de Armas,Cruz Verde,pharmacy,27
+PC576,PC576-Avenida Salvador / esq. Pedro León Gallo,Farmacia Comunitaria de Providencia,pharmacy,27
+PD501,PD501-José Manuel Infante / esq. Av. Irarrázaval,Farmarecet,pharmacy,27
+PC566,PC566-Avenida Salvador / esq. Luis Montaner,Centro de Estudios Reumatológicos,doctors,26
+PD482,PD482-Avenida Salvador / esq. Avenida Sucre,Farmacias Ahumada,pharmacy,26
+PC564,PC564-Parada / Hospital Del Salvador,Centro de Salud Clini,clinic,24
+PC579,PC579-Parada 6 / (M) Salvador,Cruz Verde,pharmacy,22
+PD340,PD340-Parada / Casa de La Cultura Ñuñoa,SalcoBrand,pharmacy,22
+PA264,PA264-Parada 2 / (M) Santa Ana,Sos Farmacias,pharmacy,21
+PC580,PC580-Parada 4 / (M) Santa Isabel,Farmacia Montes,pharmacy,21
+PD319,PD319-Parada 2 / (M) Ñuñoa,SalcoBrand,pharmacy,21
+PJ912,PJ912-Avenida Dorsal / esq. Las Palmas,Farmacia Los Ediles,pharmacy,21
+PA383,PA383-Parada 5 / Plaza Italia,Ecofarmacias,pharmacy,20
+PA462,PA462-Catedral / esq. Ricardo Cumming,Farmacias del Dr. Simi,pharmacy,19
+PJ878,PJ878-Avenida Dorsal / esq. Los Ediles,Farmacia Los Ediles,pharmacy,14
+PD134,PD134-Av. San Luis de Macul / esq. Pasaje Fresia,Farmacias La Botika,pharmacy,11
+PD350,PD350-Parada 5 / (M) Ñuñoa,Cruz Verde,pharmacy,11
+PD318,PD318-Parada 5 / (M) Chile España,Farcamcias Latinoamericana,pharmacy,10
+PD337,PD337-Parada 4 / (M) Chile España,Farmacia Homeopática Nat Pharma,pharmacy,8
+PD323,PD323-Avenida Irarrázaval / esq. José M. Infante,Farmarecet,pharmacy,7
+PA430,PA430-Compañía de Jesús / esq. Ricardo Cumming,Cruz Verde,pharmacy,5
+PC577,PC577-Avenida Salvador / esq. Rancagua,Farmacias Carmen,pharmacy,4
+

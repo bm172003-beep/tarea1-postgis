@@ -1,0 +1,17 @@
+calle,clase,km,km_con_bus,km_sin_bus,pct_con_bus
+Autopista Nororiente,motorway,8.20,0.10,8.10,1.2
+Autopista Vespucio Oriente,motorway,18.24,10.18,8.07,55.8
+Avenida Presidente Riesco,secondary,6.18,0.18,6.00,3.0
+Autopista Costanera Norte,motorway,52.80,47.30,5.50,89.6
+Costanera Sur,secondary,6.54,1.07,5.48,16.3
+Avenida Costanera Sur,secondary,9.81,4.75,5.07,48.4
+Avenida Andrés Bello,primary,5.40,0.61,4.78,11.4
+General Velásquez,motorway,32.27,27.81,4.46,86.2
+Avenida Presidente Salvador Allende Gossens,secondary,11.66,8.00,3.66,68.6
+Avenida Charles Hamilton,secondary,4.04,0.66,3.38,16.4
+Avenida Presidente Sebastián Piñera Echenique,secondary,3.86,0.48,3.38,12.5
+Costanera Sur San Josemaría Escrivá de Balaguer,secondary,5.82,2.89,2.93,49.7
+Avenida Vicuña Mackenna,primary,16.75,13.83,2.92,82.5
+Avenida Monseñor Carlos Casanueva,secondary,2.97,0.23,2.74,7.8
+Avenida Alonso de Córdova,secondary,3.55,0.86,2.69,24.2
+

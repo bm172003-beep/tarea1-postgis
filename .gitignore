@@ -1,0 +1,15 @@
+# Datos fuente y derivados: NO se versionan (descuento de -10 si aparecen en el repo).
+datos/
+datos_fuente/
+*.pbf
+*.osm.pbf
+*.zip
+osm_*.gpkg
+comunas_cl.sql
+
+# Los GeoPackages de los MAPAS sí van en resultados/ (livianos): no se ignoran.
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env

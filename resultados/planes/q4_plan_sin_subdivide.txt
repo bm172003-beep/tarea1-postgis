@@ -1,0 +1,28 @@
+                                                                      QUERY PLAN                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=966.52..967.84 rows=33 width=190) (actual time=435.098..435.767 rows=30 loops=1)
+   Group Key: tramos.comuna
+   Buffers: shared hit=29600
+   CTE tramos
+     ->  Nested Loop  (cost=0.14..965.02 rows=33 width=26) (actual time=0.891..428.648 rows=3069 loops=1)
+           Buffers: shared hit=29597
+           ->  Seq Scan on comunas_caja c  (cost=0.00..32.30 rows=30 width=2781) (actual time=0.007..0.095 rows=30 loops=1)
+                 Buffers: shared hit=32
+           ->  Index Scan using idx_recorridos_geom on recorridos r  (cost=0.14..17.19 rows=1 width=8094) (actual time=0.160..3.303 rows=102 loops=30)
+                 Index Cond: (geom && c.geom_caja)
+                 Filter: st_intersects(geom, c.geom_caja)
+                 Rows Removed by Filter: 116
+                 Buffers: shared hit=21951
+   ->  Sort  (cost=1.49..1.57 rows=33 width=162) (actual time=435.057..435.189 rows=3069 loops=1)
+         Sort Key: tramos.comuna, tramos.route_short_name
+         Sort Method: quicksort  Memory: 268kB
+         Buffers: shared hit=29600
+         ->  CTE Scan on tramos  (cost=0.00..0.66 rows=33 width=162) (actual time=0.893..431.347 rows=3069 loops=1)
+               Buffers: shared hit=29597
+ Planning:
+   Buffers: shared hit=264
+ Planning Time: 9.397 ms
+ Execution Time: 438.921 ms
+(23 rows)
+
+

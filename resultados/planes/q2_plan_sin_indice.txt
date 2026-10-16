@@ -1,0 +1,36 @@
+                                                                         QUERY PLAN                                                                          
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=164232348.88..164232348.89 rows=1 width=8) (actual time=1260.041..1260.126 rows=1 loops=1)
+   Buffers: shared hit=1300
+   ->  Nested Loop Anti Join  (cost=7033.96..164232343.89 rows=1998 width=0) (actual time=230.941..1260.088 rows=11 loops=1)
+         Join Filter: st_dwithin(edificios_comuna.punto, p.geom, '500'::double precision)
+         Rows Removed by Join Filter: 4420347
+         Buffers: shared hit=1300
+         ->  Limit  (cost=7033.96..7263.96 rows=2000 width=36) (actual time=123.973..124.887 rows=2000 loops=1)
+               Buffers: shared hit=1208
+               ->  Gather Merge  (cost=7033.96..15073.95 rows=69913 width=36) (actual time=22.573..23.263 rows=2000 loops=1)
+                     Workers Planned: 1
+                     Workers Launched: 1
+                     Buffers: shared hit=1208
+                     ->  Sort  (cost=6033.95..6208.73 rows=69913 width=36) (actual time=11.124..11.265 rows=1000 loops=2)
+                           Sort Key: edificios_comuna.id
+                           Sort Method: top-N heapsort  Memory: 237kB
+                           Buffers: shared hit=1208
+                           Worker 0:  Sort Method: quicksort  Memory: 25kB
+                           ->  Parallel Seq Scan on edificios_comuna  (cost=0.00..1851.13 rows=69913 width=36) (actual time=0.009..4.620 rows=59426 loops=2)
+                                 Buffers: shared hit=1152
+         ->  Materialize  (cost=0.00..190.53 rows=6569 width=32) (actual time=0.000..0.077 rows=2211 loops=2000)
+               Buffers: shared hit=92
+               ->  Seq Scan on paraderos_gtfs p  (cost=0.00..157.69 rows=6569 width=32) (actual time=0.037..0.800 rows=6569 loops=1)
+                     Buffers: shared hit=92
+ Planning:
+   Buffers: shared hit=212
+ Planning Time: 8.237 ms
+ JIT:
+   Functions: 12
+   Options: Inlining true, Optimization true, Expressions true, Deforming true
+   Timing: Generation 0.396 ms, Inlining 49.060 ms, Optimization 31.949 ms, Emission 20.467 ms, Total 101.873 ms
+ Execution Time: 1273.874 ms
+(31 rows)
+
+

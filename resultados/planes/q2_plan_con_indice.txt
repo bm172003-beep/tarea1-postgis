@@ -1,0 +1,31 @@
+                                                                         QUERY PLAN                                                                          
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=33367.40..33367.41 rows=1 width=8) (actual time=39.348..41.302 rows=1 loops=1)
+   Buffers: shared hit=8584
+   ->  Nested Loop Anti Join  (cost=7034.23..33362.41 rows=1998 width=0) (actual time=19.496..41.297 rows=11 loops=1)
+         Buffers: shared hit=8584
+         ->  Limit  (cost=7033.96..7263.96 rows=2000 width=36) (actual time=17.116..19.490 rows=2000 loops=1)
+               Buffers: shared hit=1208
+               ->  Gather Merge  (cost=7033.96..15073.95 rows=69913 width=36) (actual time=17.115..19.372 rows=2000 loops=1)
+                     Workers Planned: 1
+                     Workers Launched: 1
+                     Buffers: shared hit=1208
+                     ->  Sort  (cost=6033.95..6208.73 rows=69913 width=36) (actual time=12.186..12.247 rows=1512 loops=2)
+                           Sort Key: edificios_comuna.id
+                           Sort Method: top-N heapsort  Memory: 237kB
+                           Buffers: shared hit=1208
+                           Worker 0:  Sort Method: top-N heapsort  Memory: 237kB
+                           ->  Parallel Seq Scan on edificios_comuna  (cost=0.00..1851.13 rows=69913 width=36) (actual time=0.007..5.634 rows=59426 loops=2)
+                                 Buffers: shared hit=1152
+         ->  Index Scan using idx_paraderos_gtfs_geom on paraderos_gtfs p  (cost=0.27..13.04 rows=1 width=32) (actual time=0.010..0.010 rows=1 loops=2000)
+               Index Cond: (geom && st_expand(edificios_comuna.punto, '500'::double precision))
+               Filter: st_dwithin(edificios_comuna.punto, geom, '500'::double precision)
+               Rows Removed by Filter: 1
+               Buffers: shared hit=7376
+ Planning:
+   Buffers: shared hit=212
+ Planning Time: 8.172 ms
+ Execution Time: 41.413 ms
+(26 rows)
+
+

@@ -1,0 +1,22 @@
+                                                                        QUERY PLAN                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ HashAggregate  (cost=613.43..613.73 rows=30 width=18) (actual time=14.350..14.354 rows=30 loops=1)
+   Group Key: c.comuna
+   Batches: 1  Memory Usage: 24kB
+   Buffers: shared hit=11211
+   ->  Nested Loop Left Join  (cost=0.15..600.55 rows=2577 width=16) (actual time=0.155..13.147 rows=6569 loops=1)
+         Buffers: shared hit=11211
+         ->  Seq Scan on comunas_caja c  (cost=0.00..32.30 rows=30 width=6778) (actual time=0.006..0.034 rows=30 loops=1)
+               Buffers: shared hit=32
+         ->  Index Scan using idx_paraderos_gtfs_geom on paraderos_gtfs p  (cost=0.15..18.93 rows=1 width=38) (actual time=0.070..0.412 rows=219 loops=30)
+               Index Cond: (geom @ c.geom)
+               Filter: st_within(geom, c.geom)
+               Rows Removed by Filter: 248
+               Buffers: shared hit=11114
+ Planning:
+   Buffers: shared hit=237
+ Planning Time: 8.510 ms
+ Execution Time: 14.445 ms
+(17 rows)
+
+
